@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Gray background color */
+  }
+  
+  .header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .sublogo {
+    font-size: 16px;
+    color: rgb(99, 98, 98);
+  }
+  
+  .content {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .content img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .footer {
+    margin-top: 5px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: blue;
+  }
+  
