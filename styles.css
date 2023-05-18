@@ -22,7 +22,7 @@ body {
   
   .sublogo {
     font-size: 16px;
-    color: rgb(99, 98, 98);
+    color: gray;
   }
   
   .content {
@@ -36,11 +36,32 @@ body {
   }
   
   .footer {
-    margin-top: 5px;
+    margin-top: 20px;
   }
   
   .link {
     text-decoration: none;
     color: blue;
+  }
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 768px) {
+    .content {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 20px;
+    }
+  
+    .sublogo {
+      font-size: 14px;
+    }
+  
+    .content {
+      width: 90%;
+    }
   }
   
