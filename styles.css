@@ -39,11 +39,20 @@ body {
     margin-top: 20px;
   }
   
+  .footer1 {
+    margin-top: 20px;
+  }
+  
   .link {
     text-decoration: none;
     color: blue;
   }
   
+  .link1 {
+    text-decoration: underline;
+    color: darkgreen;
+  }
+
   /* Media queries for responsive design */
   @media screen and (max-width: 768px) {
     .content {
