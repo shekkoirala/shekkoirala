@@ -1,76 +1,75 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2; /* Gray background color */
-  }
-  
-  .header {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .sublogo {
-    font-size: 16px;
-    color: gray;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Gray background color */
+}
+
+.header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sublogo {
+  font-size: 16px;
+  color: gray;
+}
+
+.content {
+  width: 50%;
+  text-align: center;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.footer1 {
+  margin-top: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: blue;
+}
+
+.link1 {
+  text-decoration: underline;
+  color: darkgreen;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
   .content {
-    width: 50%;
-    text-align: center;
+    width: 80%;
   }
-  
-  .content img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .footer {
-    margin-top: 20px;
-  }
-  
-  .footer1 {
-    margin-top: 20px;
-  }
-  
-  .link {
-    text-decoration: none;
-    color: blue;
-  }
-  
-  .link1 {
-    text-decoration: underline;
-    color: darkgreen;
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 20px;
   }
 
-  /* Media queries for responsive design */
-  @media screen and (max-width: 768px) {
-    .content {
-      width: 80%;
-    }
+  .sublogo {
+    font-size: 14px;
   }
-  
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 20px;
-    }
-  
-    .sublogo {
-      font-size: 14px;
-    }
-  
-    .content {
-      width: 90%;
-    }
+
+  .content {
+    width: 90%;
   }
-  
+}
