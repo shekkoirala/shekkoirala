@@ -1,17 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  /* background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); */
+  /* background: linear-gradient(to top, #00223e, #4a548c, #d5a0a7, #ffd1b9, #9cd4ff); */
+    background: linear-gradient(to top, #fdc692 0%, #c6eefd 100%);
+
+
+}
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2; /* Gray background color */
+  max-width: 600px; /* Adjust based on your preference */
+  padding: 20px; /* Adjust spacing */
+  box-sizing: border-box;
 }
 
-.header {
-  margin-bottom: 20px;
+.header, .footer {
   text-align: center;
 }
 
@@ -25,51 +48,32 @@ body {
   color: gray;
 }
 
-.content {
-  width: 50%;
-  text-align: center;
-}
-
 .content img {
-  max-width: 100%;
-  height: auto;
+  max-height: 50vh; /* Adjust image size to ensure it fits within the viewport */
+  max-width: 100%; /* Make image responsive */
+  object-fit: contain; /* Keep aspect ratio */
 }
 
-.footer {
-  margin-top: 20px;
-}
-
-.footer1 {
-  margin-top: 20px;
-}
-
-.link {
+.link, .link1 {
+  display: block; /* Ensure links are on their own line */
+  margin: 10px 0; /* Space out links */
   text-decoration: none;
   color: blue;
 }
 
 .link1 {
-  text-decoration: underline;
   color: darkgreen;
+  text-decoration: underline;
 }
 
-/* Media queries for responsive design */
 @media screen and (max-width: 768px) {
-  .content {
-    width: 80%;
+  .logo, .sublogo {
+      font-size: 90%; /* Reduce text size on smaller screens */
   }
 }
 
 @media screen and (max-width: 480px) {
-  .logo {
-    font-size: 20px;
-  }
-
-  .sublogo {
-    font-size: 14px;
-  }
-
-  .content {
-    width: 90%;
+  .content img {
+      max-height: 30vh; /* Further adjust image size for very small devices */
   }
 }
